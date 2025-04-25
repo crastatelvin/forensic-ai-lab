@@ -41,4 +41,5 @@ class AnalysisResult(db.Model):
         return f'<AnalysisResult {self.module} (Score: {self.score}, Result: {self.result})>'
 # DEV_ACTIVITY_LOG_START
 # 
+# 
 # DEV_ACTIVITY_LOG_END
