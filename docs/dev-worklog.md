@@ -6,3 +6,4 @@
 - [2025-04-26 11:06] Built/updated darkweb module notes in README.md.
 - [2025-04-26 19:24] Built/updated DNA comparison refinement in ai_tools.py.
 - [2025-04-27 09:39] Built/updated fingerprint workflow in templates.
+- [2025-04-27 14:15] Built/updated dashboard metrics update in forensic_web.py.
