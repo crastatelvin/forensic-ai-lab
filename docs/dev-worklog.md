@@ -8,3 +8,4 @@
 - [2025-04-27 09:39] Built/updated fingerprint workflow in templates.
 - [2025-04-27 14:15] Built/updated dashboard metrics update in forensic_web.py.
 - [2025-04-28 13:36] Built/updated fingerprint workflow in utils.py.
+- [2025-04-28 10:03] Built/updated DNA comparison refinement in models.py.
