@@ -12,3 +12,4 @@
 - [2025-04-29 18:43] Built/updated voiceprint comparison tweaks in models.py.
 - [2025-04-29 14:36] Built/updated DNA comparison refinement in templates.
 - [2025-04-30 18:10] Built/updated fingerprint workflow in requirements.txt.
+- [2025-04-30 11:50] Built/updated file upload validation in README.md.
