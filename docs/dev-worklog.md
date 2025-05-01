@@ -14,3 +14,4 @@
 - [2025-04-30 18:10] Built/updated fingerprint workflow in requirements.txt.
 - [2025-04-30 11:50] Built/updated file upload validation in README.md.
 - [2025-04-30 09:54] Built/updated ballistics module adjustment in forensic_web.py.
+- [2025-05-01 14:13] Built/updated voiceprint comparison tweaks in forensic_web.py.
