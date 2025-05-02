@@ -16,3 +16,4 @@
 - [2025-04-30 09:54] Built/updated ballistics module adjustment in forensic_web.py.
 - [2025-05-01 14:13] Built/updated voiceprint comparison tweaks in forensic_web.py.
 - [2025-05-01 10:04] Built/updated DNA comparison refinement in README.md.
+- [2025-05-02 12:47] Built/updated toxicology scoring update in forensic_web.py.
