@@ -21,3 +21,4 @@
 - [2025-05-03 09:35] Built/updated geospatial module cleanup in utils.py.
 - [2025-05-03 12:10] Built/updated DNA comparison refinement in templates.
 - [2025-05-04 10:10] Built/updated voiceprint comparison tweaks in utils.py.
+- [2025-05-04 16:52] Built/updated DNA comparison refinement in static.
