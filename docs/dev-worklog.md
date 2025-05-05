@@ -24,3 +24,4 @@
 - [2025-05-04 16:52] Built/updated DNA comparison refinement in static.
 - [2025-05-05 21:37] Built/updated face matching flow in templates.
 - [2025-05-05 09:42] Built/updated DNA comparison refinement in utils.py.
+- [2025-05-05 14:55] Built/updated role access polish in README.md.
