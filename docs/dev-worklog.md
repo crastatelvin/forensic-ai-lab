@@ -26,3 +26,4 @@
 - [2025-05-05 09:42] Built/updated DNA comparison refinement in utils.py.
 - [2025-05-05 14:55] Built/updated role access polish in README.md.
 - [2025-05-06 17:36] Built/updated voiceprint comparison tweaks in models.py.
+- [2025-05-06 10:51] Built/updated DNA comparison refinement in requirements.txt.
