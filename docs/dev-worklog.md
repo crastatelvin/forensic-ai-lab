@@ -28,3 +28,4 @@
 - [2025-05-06 17:36] Built/updated voiceprint comparison tweaks in models.py.
 - [2025-05-06 10:51] Built/updated DNA comparison refinement in requirements.txt.
 - [2025-05-07 16:31] Built/updated gunshot analysis tuning in forensic_web.py.
+- [2025-05-07 14:00] Built/updated role access polish in static.
