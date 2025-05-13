@@ -32,3 +32,4 @@
 - [2025-05-07 16:36] Built/updated DNA comparison refinement in forensic_web.py.
 - [2025-05-08 22:20] Built/updated case assignment flow in static.
 - [2025-05-08 22:11] Built/updated report generation improvement in forensic_web.py.
+- [2025-05-13 22:27] Built/updated gunshot analysis tuning in forensic_web.py.
