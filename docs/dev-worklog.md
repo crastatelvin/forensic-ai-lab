@@ -36,3 +36,4 @@
 - [2025-05-13 09:05] Built/updated face matching flow in requirements.txt.
 - [2025-05-14 18:17] Built/updated chatbot response formatting in static.
 - [2025-05-15 21:14] Built/updated DNA comparison refinement in static.
+- [2025-05-15 14:54] Built/updated gunshot analysis tuning in requirements.txt.
