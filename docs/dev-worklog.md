@@ -38,3 +38,4 @@
 - [2025-05-15 21:14] Built/updated DNA comparison refinement in static.
 - [2025-05-15 14:54] Built/updated gunshot analysis tuning in requirements.txt.
 - [2025-05-16 15:32] Built/updated dashboard metrics update in README.md.
+- [2025-05-17 19:43] Built/updated case assignment flow in ai_tools.py.
