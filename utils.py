@@ -8,3 +8,6 @@ ALLOWED_TEXT_EXT = {'.txt', '.csv', '.log'}
 
 def validate_file(filename, allowed_extensions):
     return os.path.splitext(filename)[1].lower() in allowed_extensions
+# DEV_ACTIVITY_LOG_START
+# 
+# DEV_ACTIVITY_LOG_END
