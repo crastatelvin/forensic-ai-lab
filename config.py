@@ -13,3 +13,6 @@ class Config:
             os.makedirs(Config.UPLOAD_FOLDER)
         if not os.path.exists(Config.REPORT_FOLDER):
             os.makedirs(Config.REPORT_FOLDER)
+# DEV_ACTIVITY_LOG_START
+# 
+# DEV_ACTIVITY_LOG_END
