@@ -40,3 +40,4 @@
 - [2025-05-16 15:32] Built/updated dashboard metrics update in README.md.
 - [2025-05-17 19:43] Built/updated case assignment flow in ai_tools.py.
 - [2025-05-21 11:40] Built/updated ballistics module adjustment in requirements.txt.
+- [2025-05-21 21:49] Built/updated face matching flow in forensic_web.py.
