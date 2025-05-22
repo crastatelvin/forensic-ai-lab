@@ -42,3 +42,4 @@
 - [2025-05-21 11:40] Built/updated ballistics module adjustment in requirements.txt.
 - [2025-05-21 21:49] Built/updated face matching flow in forensic_web.py.
 - [2025-05-22 13:46] Built/updated darkweb module notes in templates.
+- [2025-05-22 15:31] Built/updated case assignment flow in static.
