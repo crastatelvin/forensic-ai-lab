@@ -1293,3 +1293,6 @@ def reset_db():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=True)
+# DEV_ACTIVITY_LOG_START
+# 
+# DEV_ACTIVITY_LOG_END
