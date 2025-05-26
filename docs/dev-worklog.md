@@ -44,3 +44,4 @@
 - [2025-05-22 13:46] Built/updated darkweb module notes in templates.
 - [2025-05-22 15:31] Built/updated case assignment flow in static.
 - [2025-05-24 16:53] Built/updated chatbot response formatting in forensic_web.py.
+- [2025-05-26 18:53] Built/updated ballistics module adjustment in forensic_web.py.
