@@ -45,3 +45,4 @@
 - [2025-05-22 15:31] Built/updated case assignment flow in static.
 - [2025-05-24 16:53] Built/updated chatbot response formatting in forensic_web.py.
 - [2025-05-26 18:53] Built/updated ballistics module adjustment in forensic_web.py.
+- [2025-05-26 13:37] Built/updated DNA comparison refinement in requirements.txt.
