@@ -15,7 +15,7 @@
 * 📊 **Result Visualization**: View analysis results with visual plots and detailed summaries.
 * 📄 **Report Generation**: Generate and download PDF reports for completed analyses.
 * 🗂️ **Case Management**: Manage cases, track statuses, and view historical analyses.
-* 💬 **Chatbot Integration**: Interact with an AI chatbot for forensic insights and recommendations.
+* 💬 **Chatbot Integration**: Interact with an AI chatbot integrated with LLM for forensic insights and recommendations.
 
 ---
 
@@ -102,12 +102,77 @@ flask run
 
 The application supports the following AI-powered forensic modules:
 
-* 🖐️ Fingerprint Analysis
-* 🧬 DNA Analysis
-* 🗣️ Voiceprint Analysis
-* 🔫 Ballistics Analysis
-* ☠️ Toxicology Analysis
-* ...and many more!
+🔬 AI Analysis Modules
+The application supports a wide range of AI-powered forensic modules to analyze diverse types of evidence:
+
+🤖 AI Analyzer
+
+🔥 Arson Analysis
+
+🔫 Ballistics Analysis
+
+🦷 Bite Mark Analysis
+
+🩸 Bloodstain Analysis
+
+🌐 Dark Web Analysis
+
+🌑 Darkweb Analysis
+
+🎭 Deepfake Detection
+
+🌍 Digital Footprint Analysis
+
+🧬 DNA Analysis
+
+💥 Explosive Analysis
+
+🧑‍🤝‍🧑 Face Recognition
+
+🧵 Fiber Analysis
+
+🖐️ Fingerprint Analysis
+
+🚶 Gait Analysis
+
+🗺️ Geospatial Analysis
+
+🔍 Glass Analysis
+
+🔫 Gunshot Analysis
+
+🧑‍🦰 Hair Analysis
+
+✍️ Handwriting Analysis
+
+🐜 Insect Analysis
+
+👁️ Iris Analysis
+
+🕵️‍♂️ Lie Detection
+
+📦 Object Detection
+
+👃 Odor Profile Analysis
+
+🎨 Paint Analysis
+
+🎣 Phishing Analysis
+
+🌸 Pollen Analysis
+
+👞 Shoe Print Analysis
+
+🌱 Soil Analysis
+
+🚗 Tire Track Analysis
+
+🛠️ Tool Mark Analysis
+
+☠️ Toxicology Analysis
+
+🎙️ Voiceprint Analysis
+
 
 Each module includes a dedicated page for evidence upload, result visualization, and report downloads.
 
@@ -115,7 +180,7 @@ Each module includes a dedicated page for evidence upload, result visualization,
 
 ## 🤖 Chatbot Integration
 
-Interact with the AI chatbot directly from the dashboard for forensic insights, recommendations, and quick help.
+Interact with the LLM integrated AI Forensic Agent chatbot directly from the dashboard for forensic insights, recommendations, and quick help.
 
 ---
 
