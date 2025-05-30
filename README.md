@@ -1,4 +1,3 @@
-Sure! Here's a visually enhanced, emoji-rich version of your **Forensic AI Lab \[Project F.A.I.L]** README suitable for GitHub, with a clear line-by-line project structure:
 
 ---
 
