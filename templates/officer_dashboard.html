@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Dashboard - Forensic AI Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Sidebar styles */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60px;
+            background-color: #16213e;
+            color: #fff;
+            overflow-y: auto;
+            transition: 0.3s;
+        }
+        .sidebar:hover {
+            width: 250px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            text-align: left;
+            cursor: pointer;
+            border-bottom: 1px solid #1a2b4e;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .sidebar ul li:hover {
+            background-color: #1a2b4e;
+        }
+        .sidebar ul li i {
+            font-size: 20px;
+            color: #00d4ff;
+        }
+        .sidebar ul li span {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .sidebar:hover ul li span {
+            opacity: 1;
+        }
+        .content {
+            margin-left: 60px;
+            transition: 0.3s;
+        }
+        .sidebar:hover ~ .content {
+            margin-left: 250px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><i class="fas fa-home"></i><span><a href="{{ url_for('officer_dashboard') }}" style="color: #fff; text-decoration: none;">Officer Dashboard</a></span></li>
+            <li onclick="showSection('search-section')"><i class="fas fa-search"></i><span>Search Cases</span></li>
+            <li onclick="showSection('stats-section')"><i class="fas fa-chart-pie"></i><span>Statistics</span></li>
+            <li onclick="showSection('assigned-cases')"><i class="fas fa-briefcase"></i><span>Assigned Cases</span></li>
+            <li onclick="showSection('live-analytics')"><i class="fas fa-chart-line"></i><span>Live Analytics</span></li>
+            <li onclick="showSection('quick-actions')"><i class="fas fa-bolt"></i><span>Quick Actions</span></li>
+            <li onclick="showSection('case-management')"><i class="fas fa-briefcase"></i><span>Case Management</span></li>
+            <li><i class="fas fa-briefcase"></i><span><a href="{{ url_for('view_all_cases') }}" style="color: #fff; text-decoration: none;">View All Cases</a></span></li>
+            <!-- Removed Manage Your Cases option -->
+            <li><i class="fas fa-robot"></i><span><a href="{{ url_for('ai_analysis') }}" style="color: #fff; text-decoration: none;">AI Modules</a></span></li>
+            <!-- Removed "Back to Dashboard" option -->
+        </ul>
+    </div>
+
+    <div class="content" id="content">
+        <div class="container">
+            <header class="header">
+                <h1>Officer Dashboard</h1>
+                <nav class="nav-bar">
+                    <a href="{{ url_for('homepage') }}" class="nav-btn">Home</a>
+                    <a href="{{ url_for('logout') }}" class="nav-btn">Log Out</a>
+                </nav>
+            </header>
+
+            <section class="dashboard-section stats-section" id="stats-section">
+                <h2>Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-box stat-officers">
+                        <h3>Total Officers</h3>
+                        <p>{{ total_officers }}</p>
+                    </div>
+                    <div class="stat-box stat-cases">
+                        <h3>Total Cases</h3>
+                        <p>{{ total_cases }}</p>
+                    </div>
+                    <div class="stat-box stat-opened">
+                        <h3>Opened Cases</h3>
+                        <p>{{ opened_cases }}</p>
+                    </div>
+                    <div class="stat-box stat-closed">
+                        <h3>Closed Cases</h3>
+                        <p>{{ closed_cases }}</p>
+                    </div>
+                    <div class="stat-box stat-unassigned">
+                        <h3>Unassigned Cases</h3>
+                        <p>{{ unassigned_cases }}</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section search-section" id="search-section" style="display: none;">
+                <form action="{{ url_for('search_cases') }}" method="GET" class="search-form">
+                    <input type="text" name="case_id" placeholder="Search by Case ID..." class="search-input" required>
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </section>
+
+            {% if search_results %}
+            <section class="search-results">
+                <h2>Search Results</h2>
+                <div class="grid-table">
+                    <div class="grid-header">Case ID</div>
+                    <div class="grid-header">Type</div>
+                    <div class="grid-header">Status</div>
+                    <div class="grid-header">Date</div>
+                    {% for case in search_results %}
+                        <div class="grid-cell">{{ case.id }}</div>
+                        <div class="grid-cell">{{ case.analysis_type }}</div>
+                        <div class="grid-cell">{{ case.status }}</div>
+                        <div class="grid-cell">{{ case.created_at.strftime('%Y-%m-%d %H:%M') }}</div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+
+            <main>
+                <!-- Stats Section -->
+                <section class="dashboard-section stats-section" id="stats-section" style="display: none;">
+                    <h2>Statistics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-box stat-officers">
+                            <h3>Total Officers</h3>
+                            <p>{{ total_officers }}</p>
+                        </div>
+                        <div class="stat-box stat-cases">
+                            <h3>Total Cases</h3>
+                            <p>{{ total_cases }}</p>
+                        </div>
+                        <div class="stat-box stat-opened">
+                            <h3>Opened Cases</h3>
+                            <p>{{ opened_cases }}</p>
+                        </div>
+                        <div class="stat-box stat-closed">
+                            <h3>Closed Cases</h3>
+                            <p>{{ closed_cases }}</p>
+                        </div>
+                        <div class="stat-box stat-unassigned">
+                            <h3>Unassigned Cases</h3>
+                            <p>{{ unassigned_cases }}</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dashboard-section">
+                    <h2>Welcome, {{ user.username if user else 'Officer' }}</h2>
+                    <p>Role: Officer</p>
+                </section>
+
+                <section class="dashboard-section assigned-cases" id="assigned-cases" style="display: none;">
+                    <h2>Assigned Cases</h2>
+                    <table class="grid-table">
+                        <tr>
+                            <th class="grid-header">Case ID</th>
+                            <th class="grid-header">Name</th>
+                            <th class="grid-header">Type</th>
+                            <th class="grid-header">Status</th>
+                            <th class="grid-header">Date</th>
+                            <th class="grid-header">Actions</th>
+                        </tr>
+                        {% if cases and cases|length > 0 %}
+                            {% for case in cases %}
+                                <tr>
+                                    <td class="grid-cell">{{ case.id }}</td>
+                                    <td class="grid-cell">{{ case.name }}</td>
+                                    <td class="grid-cell">{{ case.analysis_type }}</td>
+                                    <td class="grid-cell">{{ case.status }}</td>
+                                    <td class="grid-cell">{{ case.created_at.strftime('%Y-%m-%d') }}</td>
+                                    <td class="grid-cell">
+                                        <button class="action-btn" onclick="openModal({{ case.id }}, '{{ case.name }}', '{{ case.analysis_type }}', '{{ case.status }}', '{{ case.description }}')">View</button>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td class="grid-cell" colspan="6">No cases assigned yet.</td>
+                            </tr>
+                        {% endif %}
+                    </table>
+                </section>
+
+                <!-- Modal -->
+                <div class="modal-overlay" id="modal-overlay"></div>
+                <div class="modal" id="case-modal">
+                    <h2>Case Details</h2>
+                    <form action="{{ url_for('edit_case', case_id=case.id if case else 0) }}" method="POST" enctype="multipart/form-data" id="modal-form">
+                        <input type="hidden" name="case_id" id="modal-case-id" value="{{ case.id if case else '' }}">
+                        <p><strong>Case ID:</strong> <span id="modal-case-id-display"></span></p>
+                        <p><strong>Name:</strong> <span id="modal-case-name"></span></p>
+                        <p><strong>Type:</strong> <span id="modal-case-type"></span></p>
+                        <p><strong>Status:</strong>
+                            <select name="status" id="modal-case-status">
+                                <option value="pending">Pending</option>
+                                <option value="in progress">In Progress</option>
+                                <option value="completed">Completed</option>
+                            </select>
+                        </p>
+                        <p><strong>Description:</strong></p>
+                        <textarea id="modal-case-description" class="text-input" rows="4" readonly></textarea>
+                        <p><strong>Upload Report:</strong> <input type="file" name="report" class="file-input"></p>
+                        <div>
+                            <button type="submit" class="action-btn">Update</button>
+                            <button type="button" class="action-btn" onclick="closeModal()">Close</button>
+                        </div>
+                    </form>
+                </div>
+
+                <section class="dashboard-section live-analytics" id="live-analytics" style="display: none;">
+                    <h2>Live Analytics</h2>
+                    <div class="charts">
+                        <canvas id="caseStatusChart" width="400" height="200"></canvas>
+                        <canvas id="analysisTypesChart" width="400" height="200"></canvas>
+                    </div>
+                </section>
+
+                <section class="dashboard-section quick-actions" id="quick-actions" style="display: none;">
+                    <h2>Quick Actions</h2>
+                    <div class="actions">
+                        <a href="{{ url_for('ai_analysis') }}" class="nav-btn">Submit New Analysis</a>
+                        <a href="{{ url_for('download_all_reports_officer') }}" class="nav-btn">Download All Reports</a>
+                    </div>
+                    <h3>Recent Results</h3>
+                    <div class="grid-table">
+                        <div class="grid-header">Case ID</div>
+                        <div class="grid-header">Module</div>
+                        <div class="grid-header">Score</div>
+                        <div class="grid-header">Message</div>
+                        {% if recent_results %}
+                            {% for result in recent_results %}
+                                <div>{{ result.case_id }}</div>
+                                <div>{{ result.module }}</div>
+                                <div>{{ result.score }}</div>
+                                <div>{{ result.result }}</div>
+                            {% endfor %}
+                        {% else %}
+                            <div colspan="4">No recent results available.</div>
+                        {% endif %}
+                    </div>
+                </section>
+
+                <!-- Case Management Section -->
+                <section class="dashboard-section case-management" id="case-management" style="display: none;">
+                    <h2>Case Management</h2>
+                    <form action="{{ url_for('create_case') }}" method="POST" enctype="multipart/form-data" class="form-block">
+                        <div class="form-row">
+                            <label for="case_id">Case ID:</label>
+                            <input type="text" name="case_id" id="case_id" required class="text-input">
+                        </div>
+                        <div class="form-row">
+                            <label for="name">Case Name:</label>
+                            <input type="text" name="name" id="name" required class="text-input">
+                        </div>
+                        <div class="form-row">
+                            <label for="location">Location:</label>
+                            <input type="text" name="location" id="location" required class="text-input">
+                        </div>
+                        <div class="form-row">
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="text" name="phone_number" id="phone_number" required class="text-input">
+                        </div>
+                        <div class="form-row">
+                            <label for="description">Description/FIR:</label>
+                            <textarea name="description" id="description" rows="4" class="text-input"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <label for="analysis_type">Case Type:</label>
+                            <select name="analysis_type" id="analysis_type" class="select-input">
+                                <option value="fingerprint">Fingerprint</option>
+                                <option value="gunshot">Gunshot</option>
+                                <option value="dna">DNA</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="expert_id">Assign Expert:</label>
+                            <select name="expert_id" id="expert_id" class="select-input">
+                                <option value="">Unassigned</option>
+                                {% for expert in experts %}
+                                    <option value="{{ expert.id }}">{{ expert.username }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="evidence_file">Upload Evidence:</label>
+                            <input type="file" name="evidence_file" id="evidence_file" class="file-input">
+                        </div>
+                        <div class="form-row form-submit">
+                            <button type="submit" class="submit-btn">Submit Case</button>
+                        </div>
+                    </form>
+                    <div class="grid-table">
+                        <div class="grid-header">Case ID</div>
+                        <div class="grid-header">Name</div>
+                        <div class="grid-header">Type</div>
+                        <div class="grid-header">Expert</div>
+                        <div class="grid-header">Status</div>
+                        <div class="grid-header">Actions</div>
+                        {% for case in cases %}
+                            <div class="grid-cell">{{ case.id }}</div>
+                            <div class="grid-cell">{{ case.name }}</div>
+                            <div class="grid-cell">{{ case.analysis_type }}</div>
+                            <div class="grid-cell">{{ case.expert.username if case.expert else 'Unassigned' }}</div>
+                            <div class="grid-cell">{{ case.status }}</div>
+                            <div class="grid-cell">
+                                <a href="{{ url_for('edit_case', case_id=case.id) }}" class="action-btn">Edit</a>
+                                <a href="{{ url_for('delete_case', case_id=case.id) }}" class="action-btn delete-btn" onclick="return confirm('Are you sure?')">Delete</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>© 2025 Forensic AI Lab by TELVIN CRASTA</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chartData = {{ chart_data|safe }};
+            if (!chartData || !chartData.case_status || !chartData.analysis_types) {
+                console.error('Invalid chart data:', chartData);
+                return;
+            }
+            new Chart(document.getElementById('caseStatusChart'), {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(chartData.case_status),
+                    datasets: [{
+                        data: Object.values(chartData.case_status),
+                        backgroundColor: ['#00d4ff', '#ff4081', '#4caf50', '#ffeb3b', '#ab47bc'],
+                        borderWidth: 1,
+                        borderColor: '#16213e'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: { display: true, text: 'Case Status', color: '#00d4ff', font: { size: 18 } },
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+            new Chart(document.getElementById('analysisTypesChart'), {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(chartData.analysis_types),
+                    datasets: [{
+                        label: 'Analyses Completed',
+                        data: Object.values(chartData.analysis_types),
+                        backgroundColor: '#00d4ff',
+                        borderColor: '#00d4ff',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: { beginAtZero: true, ticks: { color: '#00d4ff' }, grid: { color: '#1a2b4e' } },
+                        x: { ticks: { color: '#00d4ff' }, grid: { display: false } }
+                    },
+                    plugins: {
+                        title: { display: true, text: 'Analysis Types Completed', color: '#00d4ff', font: { size: 18 } },
+                        legend: { labels: { color: '#00d4ff' } }
+                    }
+                }
+            });
+        });
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.dashboard-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function openModal(caseId, caseName, caseType, caseStatus, caseDescription) {
+            document.getElementById('modal-case-id').value = caseId;
+            document.getElementById('modal-case-id-display').innerText = caseId;
+            document.getElementById('modal-case-name').innerText = caseName;
+            document.getElementById('modal-case-type').innerText = caseType;
+            document.getElementById('modal-case-status').value = caseStatus;
+            document.getElementById('modal-case-description').value = caseDescription;
+
+            const form = document.getElementById('modal-form');
+            form.action = form.action.replace('edit_case/', `edit_case/${caseId}`);
+
+            document.getElementById('case-modal').classList.add('active');
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('case-modal').classList.remove('active');
+            document.getElementById('modal-overlay').classList.remove('active');
+        }
+    </script>
+    <style>
+        .stats-grid {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .stat-box {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
+        }
+        .stat-officers { background-color: #4caf50; }
+        .stat-cases { background-color: #2196f3; }
+        .stat-opened { background-color: #ff9800; }
+        .stat-closed { background-color: #9c27b0; }
+        .stat-unassigned { background-color: #f44336; }
+        .profile-card {
+            background: #16213e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+        }
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #00d4ff;
+        }
+        .profile-card h3 {
+            font-size: 1.8em;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        .profile-card p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 1000;
+        }
+        .modal-overlay.active {
+            display: block;
+        }
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 1001;
+        }
+        .modal.active {
+            display: block;
+        }
+    </style>
+    <div id="chatbot-container" class="chatbot-container hidden">
+        <div class="chatbot-header">
+            <span>AI Chatbot</span>
+            <button id="close-chatbot" class="close-btn">&times;</button>
+        </div>
+        <div class="chat-container" id="chatContainer"></div>
+        <form id="chatForm" class="chat-form">
+            <input type="text" id="userInput" class="chat-input" placeholder="Type your message..." required>
+            <button type="submit" class="chat-submit-btn">Send</button>
+        </form>
+    </div>
+    <button id="chatbot-toggle" class="floating-chat-btn">💬</button>
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

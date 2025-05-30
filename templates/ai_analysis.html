@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analysis Modules - Forensic AI Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .enhanced-btn {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #00d4ff, #007bff);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .enhanced-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.8), 0 0 30px rgba(0, 123, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Analysis Modules</h1>
+            <nav>
+                <a href="{{ url_for('homepage') }}" class="nav-btn enhanced-btn">Home</a>
+                {% if 'role' in session %}
+                    <a href="{{ url_for(session['role'] + '_dashboard') }}" class="nav-btn enhanced-btn">Back to Dashboard</a>
+                {% endif %}
+            </nav>
+        </header>
+
+        <main>
+            <section class="module-grid">
+                <a href="{{ url_for('ai_analyzer') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/ai_analyzer.png') }}" alt="AI Analyzer" class="module-icon">
+                    <h2>AI Analyzer</h2>
+                </a>
+                <a href="{{ url_for('fingerprint_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/fingerprint.png') }}" alt="Fingerprint" class="module-icon">
+                    <h2>Fingerprint</h2>
+                </a>
+                <a href="{{ url_for('dna_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/dna.png') }}" alt="DNA" class="module-icon">
+                    <h2>DNA</h2>
+                </a>
+                <a href="{{ url_for('arson_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/arson.png') }}" alt="Arson" class="module-icon">
+                    <h2>Arson</h2>
+                </a>
+                <a href="{{ url_for('ballistics_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/ballistics.png') }}" alt="Ballistics" class="module-icon">
+                    <h2>Ballistics</h2>
+                </a>
+                <a href="{{ url_for('bite_mark_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/bite_mark.png') }}" alt="Bite Mark" class="module-icon">
+                    <h2>Bite Mark</h2>
+                </a>
+                <a href="{{ url_for('bloodstain_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/bloodstain.png') }}" alt="Bloodstain" class="module-icon">
+                    <h2>Bloodstain</h2>
+                </a>
+                <a href="{{ url_for('darkweb_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/darkweb.png') }}" alt="Dark Web" class="module-icon">
+                    <h2>Dark Web</h2>
+                </a>
+                <a href="{{ url_for('deepfake_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/deepfake.png') }}" alt="Deepfake" class="module-icon">
+                    <h2>Deepfake</h2>
+                </a>
+                <a href="{{ url_for('digital_footprint_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/digital_footprint.png') }}" alt="Digital Footprint" class="module-icon">
+                    <h2>Digital Footprint</h2>
+                </a>
+                <a href="{{ url_for('iris_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/iris.png') }}" alt="Iris" class="module-icon">
+                    <h2>Iris</h2>
+                </a>
+                <a href="{{ url_for('gait_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/gait.png') }}" alt="Gait" class="module-icon">
+                    <h2>Gait</h2>
+                </a>
+                <a href="{{ url_for('gunshot_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/gunshot.png') }}" alt="Gunshot" class="module-icon">
+                    <h2>Gunshot</h2>
+                </a>
+                <a href="{{ url_for('voiceprint_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/voiceprint.png') }}" alt="Voiceprint" class="module-icon">
+                    <h2>Voiceprint</h2>
+                </a>
+                <a href="{{ url_for('liedetect_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/liedetect.png') }}" alt="Lie Detection" class="module-icon">
+                    <h2>Lie Detection</h2>
+                </a>
+                <a href="{{ url_for('face_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/face.png') }}" alt="Face" class="module-icon">
+                    <h2>Face</h2>
+                </a>
+                <a href="{{ url_for('handwriting_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/handwriting.png') }}" alt="Handwriting" class="module-icon">
+                    <h2>Handwriting</h2>
+                </a>
+                <a href="{{ url_for('tire_track_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/tire_track.png') }}" alt="Tire Track" class="module-icon">
+                    <h2>Tire Track</h2>
+                </a>
+                <a href="{{ url_for('tool_mark_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/tool_mark.png') }}" alt="Tool Mark" class="module-icon">
+                    <h2>Tool Mark</h2>
+                </a>
+                <a href="{{ url_for('fiber_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/fiber.png') }}" alt="Fiber" class="module-icon">
+                    <h2>Fiber</h2>
+                </a>
+                <a href="{{ url_for('shoe_print_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/shoe_print.png') }}" alt="Shoe Print" class="module-icon">
+                    <h2>Shoe Print</h2>
+                </a>
+                <a href="{{ url_for('explosive_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/explosive.png') }}" alt="Explosive" class="module-icon">
+                    <h2>Explosive</h2>
+                </a>
+                <a href="{{ url_for('glass_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/glass.png') }}" alt="Glass" class="module-icon">
+                    <h2>Glass</h2>
+                </a>
+                <a href="{{ url_for('pollen_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/pollen.png') }}" alt="Pollen" class="module-icon">
+                    <h2>Pollen</h2>
+                </a>
+                <a href="{{ url_for('paint_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/paint.png') }}" alt="Paint" class="module-icon">
+                    <h2>Paint</h2>
+                </a>
+                <a href="{{ url_for('soil_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/soil.png') }}" alt="Soil" class="module-icon">
+                    <h2>Soil</h2>
+                </a>
+                <a href="{{ url_for('hair_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/hair.png') }}" alt="Hair" class="module-icon">
+                    <h2>Hair</h2>
+                </a>
+                <a href="{{ url_for('insect_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/insect.png') }}" alt="Insect" class="module-icon">
+                    <h2>Insect</h2>
+                </a>
+                <a href="{{ url_for('odor_profile_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/odor_profile.png') }}" alt="Odor Profile" class="module-icon">
+                    <h2>Odor Profile</h2>
+                </a>
+                <a href="{{ url_for('phishing_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/phishing.png') }}" alt="Phishing" class="module-icon">
+                    <h2>Phishing</h2>
+                </a>
+                <a href="{{ url_for('toxicology_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/toxicology.png') }}" alt="Toxicology" class="module-icon">
+                    <h2>Toxicology</h2>
+                </a>
+                <a href="{{ url_for('geospatial_analysis') }}" class="module-card">
+                    <img src="{{ url_for('static', filename='icons/geospatial.png') }}" alt="Geospatial" class="module-icon">
+                    <h2>Geospatial</h2>
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Forensic AI Lab by TELVIN CRASTA</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

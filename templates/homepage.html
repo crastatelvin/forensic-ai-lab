@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forensic AI Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+        @font-face {
+            font-family: 'Algerian';
+            src: url("{{ url_for('static', filename='fonts/ALGER.TTF') }}") format('truetype'); /* Ensure proper font format */
+            font-display: swap; /* Ensure text is displayed while font loads */
+        }
+
+        h1.futuristic-title {
+            font-family: 'Algerian'; /* Use only Algerian font */
+            font-size: 4em;
+            color: #00d4ff;
+            text-transform: uppercase; /* Make all letters capital */
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 40px rgba(0, 212, 255, 0.5), 0 0 60px rgba(0, 212, 255, 0.3);
+            animation: glow-in-out 2s infinite alternate; /* Glow in and out effect */
+            background: transparent;
+        }
+
+        @keyframes glow-in-out {
+            from {
+                text-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 40px rgba(0, 212, 255, 0.5), 0 0 60px rgba(0, 212, 255, 0.3);
+            }
+            to {
+                text-shadow: 0 0 30px rgba(0, 212, 255, 1), 0 0 60px rgba(0, 212, 255, 0.7), 0 0 90px rgba(0, 212, 255, 0.5);
+            }
+        }
+
+        @keyframes breathing {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05); /* Slightly enlarge the text */
+            }
+        }
+
+        header {
+            background: transparent; /* Make the header background transparent */
+        }
+
+        footer {
+            background: transparent; /* Make the footer background transparent */
+            text-align: center;
+            color: #00d4ff;
+            font-size: 1rem;
+            margin-top: 20px;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .login-card {
+            background: transparent; /* Make the module cards' background transparent */
+            border: 2px solid #00d4ff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 200px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: breathing 3s infinite ease-in-out; /* Add breathing effect */
+        }
+
+        .login-card:hover {
+            transform: scale(1.1); /* Keep zoom effect but remove tilt */
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 40px rgba(0, 212, 255, 0.4);
+        }
+
+        .login-card h2 {
+            font-family: 'Orbitron', sans-serif; /* Nice futuristic font */
+            font-size: 1.5em;
+            color: #39ff14; /* Neon green color */
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.6), 0 0 30px rgba(57, 255, 20, 0.4);
+            margin-top: 10px;
+            text-transform: uppercase; /* Make text uppercase */
+        }
+
+        .tagline {
+            font-size: 0.8rem; /* Make the tagline smaller */
+            margin-top: -10px; /* Move the tagline slightly upward */
+            color: #e0e0e0;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            animation: bounce 5s ease-in-out infinite; /* Slow down the bouncing effect */
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(-50%); /* Move slightly to the left */
+            }
+            50% {
+                transform: translateX(50%); /* Move text to the right */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header style="position: relative; text-align: center;">
+            <img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo" style="position: absolute; top: 10px; left: 10px; width: 80px; height: 80px;">
+            <h1 class="futuristic-title">Forensic AI Lab</h1>
+            <p class="tagline">Powered by AI - Revolutionizing Forensic Science</p>
+        </header>
+
+        <main>
+            <section class="login-grid">
+                <a href="{{ url_for('login', role='admin') }}" class="login-card">
+                    <img src="{{ url_for('static', filename='icons/admin.png') }}" alt="Admin" class="login-icon">
+                    <h2>Admin</h2>
+                </a>
+                <a href="{{ url_for('login', role='officer') }}" class="login-card">
+                    <img src="{{ url_for('static', filename='icons/officer.png') }}" alt="Officer" class="login-icon">
+                    <h2>Officer</h2>
+                </a>
+                <a href="{{ url_for('login', role='expert') }}" class="login-card">
+                    <img src="{{ url_for('static', filename='icons/expert.png') }}" alt="Expert" class="login-icon">
+                    <h2>Expert</h2>
+                </a>
+                <a href="{{ url_for('ai_analysis') }}" class="login-card">
+                    <img src="{{ url_for('static', filename='icons/ai_modules.png') }}" alt="AI Modules" class="login-icon">
+                    <h2>AI Modules</h2>
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Forensic AI Lab by TELVIN CRASTA</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire Track Analysis - Forensic Toolkit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .module-container {
+            background: #1a2b4e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .module-container h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+        }
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .upload-form label {
+            color: #e0e0e0;
+        }
+        .upload-form input[type="file"] {
+            padding: 10px;
+            border: 1px solid #00d4ff;
+            border-radius: 5px;
+            background: #0d1b2a;
+            color: #e0e0e0;
+        }
+        .upload-form button {
+            padding: 10px 20px;
+            background: #00d4ff;
+            color: #0d1b2a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .upload-form button:hover {
+            background: #00b0ff;
+        }
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #1a2b4e;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .result-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .result-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #00d4ff;
+        }
+        .result-summary {
+            margin-top: 20px;
+            text-align: center;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tire Track Analysis Module</h1>
+            <nav>
+                <a href="{{ url_for('homepage') }}" class="nav-btn">Home</a>
+                <a href="{{ url_for('ai_analysis') }}" class="nav-btn">AI Modules</a>
+            </nav>
+        </header>
+        <div class="center-content">
+            <main>
+                <section class="module-section module-container">
+                    <h2>Upload Tire Track Images</h2>
+                    <form method="POST" enctype="multipart/form-data" class="upload-form">
+                        <div class="input-group">
+                            <label for="crime_image">Crime Scene Tire Track:</label>
+                            <input type="file" name="crime_image" id="crime_image" accept=".jpg,.jpeg,.png" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="suspect_image">Suspect Tire Track:</label>
+                            <input type="file" name="suspect_image" id="suspect_image" accept=".jpg,.jpeg,.png" required>
+                        </div>
+                        <button type="submit" class="module-btn">Analyze Tire Tracks</button>
+                    </form>
+                </section>
+                {% if result %}
+                <section class="result-section">
+                    <h2>Analysis Results</h2>
+                    <div class="result-container">
+                        <div class="result-item">
+                            <h3>Crime Scene Tire Track</h3>
+                            <img src="{{ url_for('static', filename='uploads/' + result.crime_image.split('/')[-1]) }}" alt="Crime Scene Tire Track" class="evidence-img">
+                        </div>
+                        <div class="result-item">
+                            <h3>Suspect Tire Track</h3>
+                            <img src="{{ url_for('static', filename='uploads/' + result.suspect_image.split('/')[-1]) }}" alt="Suspect Tire Track" class="evidence-img">
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>Match Score:</strong> {{ result.suspect_score }}</p>
+                        <p><strong>Result:</strong> {{ result.message }}</p>
+                    </div>
+                </section>
+                {% endif %}
+            </main>
+        </div>
+        <footer>
+            <p>© 2025 Forensic AI Lab by TELVIN CRASTA</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

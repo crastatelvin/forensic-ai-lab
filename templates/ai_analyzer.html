@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analyzer - Forensic Toolkit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">AI - Forensic AI Analyzer</h1>
+            <nav class="nav">
+                <a href="{{ url_for('homepage') }}" class="nav-btn">Home</a>
+                <a href="{{ url_for('ai_analysis') }}" class="nav-btn">AI Modules</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="chat-section">
+                <h2 class="chat-title">Talk to Grok</h2>
+                <div class="chat-container" id="chatContainer">
+                    <div class="chat-message grok-message">
+                        <span class="message-text">Hello! I’m AGENT, your AI Analyzer. How can I assist you today?</span>
+                    </div>
+                </div>
+                <form id="chatForm" class="chat-form">
+                    <input type="text" id="userInput" class="chat-input" placeholder="Type your question here..." required>
+                    <button type="submit" class="chat-submit-btn">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Forensic Toolkit by TELVIN CRASTA</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

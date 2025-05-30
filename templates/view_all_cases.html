@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Cases - Forensic AI Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .grid-table {
+            width: 90%; /* Increased width */
+            margin: 20px auto; /* Center the table */
+            border-collapse: collapse;
+        }
+        .grid-header, .grid-cell {
+            border: 1px solid #ddd;
+            padding: 15px; /* Increased padding */
+            text-align: center;
+            font-size: 1.1rem; /* Slightly larger font size */
+        }
+        .grid-header {
+            background-color: #16213e;
+            color: #fff;
+        }
+        .action-btn {
+            padding: 8px 15px; /* Increased button size */
+            background-color: #00d4ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem; /* Slightly larger font size */
+        }
+        .action-btn:hover {
+            background-color: #007bff;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 30px; /* Increased padding */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            width: 50%; /* Increased modal width */
+        }
+        .modal.active {
+            display: block;
+        }
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .modal-overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>All Cases</h1>
+            <nav class="nav-bar">
+                <a href="{{ url_for('ai_analysis') }}" class="nav-btn">AI Modules</a>
+                <a href="{{ url_for('admin_dashboard') if session['role'] == 'admin' else url_for('officer_dashboard') }}" class="nav-btn">Back to Dashboard</a>
+            </nav>
+        </header>
+        <section class="dashboard-section">
+            <h2>All Cases</h2>
+            <table class="grid-table">
+                <tr>
+                    <th class="grid-header">Case ID</th>
+                    <th class="grid-header">Name</th>
+                    <th class="grid-header">Type</th>
+                    <th class="grid-header">Status</th>
+                    <th class="grid-header">Date</th>
+                    <th class="grid-header">Assigned Expert</th>
+                    <th class="grid-header">Actions</th>
+                </tr>
+                {% if cases and cases|length > 0 %}
+                    {% for case in cases %}
+                        <tr>
+                            <td class="grid-cell">{{ case.id }}</td>
+                            <td class="grid-cell">{{ case.name }}</td>
+                            <td class="grid-cell">{{ case.analysis_type }}</td>
+                            <td class="grid-cell">{{ case.status }}</td>
+                            <td class="grid-cell">{{ case.created_at.strftime('%Y-%m-%d') }}</td>
+                            <td class="grid-cell">{{ case.expert.username if case.expert else 'Unassigned' }}</td>
+                            <td class="grid-cell">
+                                <button class="action-btn" onclick="openModal({{ case.id }}, '{{ case.name }}', '{{ case.analysis_type }}', '{{ case.status }}', '{{ case.description }}')">View</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td class="grid-cell" colspan="7">No cases available.</td>
+                    </tr>
+                {% endif %}
+            </table>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="case-modal">
+        <h2>Case Details</h2>
+        <form action="{{ url_for('view_all_cases') }}" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="case_id" id="modal-case-id">
+            <p><strong>Case ID:</strong> <span id="modal-case-id-display"></span></p>
+            <p><strong>Name:</strong> <span id="modal-case-name"></span></p>
+            <p><strong>Type:</strong> <span id="modal-case-type"></span></p>
+            <p><strong>Status:</strong>
+                <select name="status" id="modal-case-status">
+                    <option value="pending">Pending</option>
+                    <option value="in progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </p>
+            <p><strong>Description:</strong></p>
+            <textarea id="modal-case-description" class="text-input" rows="4" readonly></textarea>
+            <p><strong>Upload Report:</strong> <input type="file" name="report" class="file-input"></p>
+            <div>
+                <button type="submit" class="action-btn">Update</button>
+                <button type="button" class="action-btn" onclick="closeModal()">Close</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function openModal(caseId, caseName, caseType, caseStatus, caseDescription) {
+            document.getElementById('modal-case-id').value = caseId;
+            document.getElementById('modal-case-id-display').innerText = caseId;
+            document.getElementById('modal-case-name').innerText = caseName;
+            document.getElementById('modal-case-type').innerText = caseType;
+            document.getElementById('modal-case-status').value = caseStatus;
+            document.getElementById('modal-case-description').value = caseDescription;
+
+            document.getElementById('case-modal').classList.add('active');
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('case-modal').classList.remove('active');
+            document.getElementById('modal-overlay').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
