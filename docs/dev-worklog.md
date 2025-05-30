@@ -48,3 +48,4 @@
 - [2025-05-26 13:37] Built/updated DNA comparison refinement in requirements.txt.
 - [2025-05-27 09:01] Built/updated toxicology scoring update in ai_tools.py.
 - [2025-05-29 14:38] Built/updated dashboard metrics update in requirements.txt.
+- [2025-05-30 16:45] Built/updated gunshot analysis tuning in utils.py.
