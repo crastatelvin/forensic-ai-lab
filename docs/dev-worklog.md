@@ -51,3 +51,4 @@
 - [2025-05-30 16:45] Built/updated gunshot analysis tuning in utils.py.
 - [2025-06-01 16:35] Built/updated darkweb module notes in README.md.
 - [2025-06-06 18:32] Built/updated role access polish in requirements.txt.
+- [2025-06-06 14:50] Built/updated fingerprint workflow in models.py.
