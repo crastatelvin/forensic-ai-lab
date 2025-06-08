@@ -52,3 +52,4 @@
 - [2025-06-01 16:35] Built/updated darkweb module notes in README.md.
 - [2025-06-06 18:32] Built/updated role access polish in requirements.txt.
 - [2025-06-06 14:50] Built/updated fingerprint workflow in models.py.
+- [2025-06-08 11:30] Built/updated deepfake detection handling in ai_tools.py.
