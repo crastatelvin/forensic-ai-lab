@@ -54,3 +54,4 @@
 - [2025-06-06 14:50] Built/updated fingerprint workflow in models.py.
 - [2025-06-08 11:30] Built/updated deepfake detection handling in ai_tools.py.
 - [2025-06-09 09:21] Built/updated voiceprint comparison tweaks in ai_tools.py.
+- [2025-06-10 10:57] Built/updated voiceprint comparison tweaks in ai_tools.py.
