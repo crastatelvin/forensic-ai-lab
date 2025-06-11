@@ -56,3 +56,4 @@
 - [2025-06-09 09:21] Built/updated voiceprint comparison tweaks in ai_tools.py.
 - [2025-06-10 10:57] Built/updated voiceprint comparison tweaks in ai_tools.py.
 - [2025-06-10 11:15] Built/updated deepfake detection handling in forensic_web.py.
+- [2025-06-11 15:30] Built/updated file upload validation in forensic_web.py.
