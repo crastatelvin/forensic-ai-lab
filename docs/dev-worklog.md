@@ -61,3 +61,4 @@
 - [2025-06-14 14:59] Built/updated file upload validation in forensic_web.py.
 - [2025-06-15 20:55] Built/updated DNA comparison refinement in templates.
 - [2025-06-16 17:05] Built/updated dashboard metrics update in forensic_web.py.
+- [2025-06-17 15:02] Built/updated report generation improvement in requirements.txt.
