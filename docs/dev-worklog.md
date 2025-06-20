@@ -65,3 +65,4 @@
 - [2025-06-18 21:43] Built/updated fingerprint workflow in requirements.txt.
 - [2025-06-19 15:23] Built/updated report generation improvement in ai_tools.py.
 - [2025-06-20 11:32] Built/updated case assignment flow in forensic_web.py.
+- [2025-06-20 14:52] Built/updated chatbot response formatting in models.py.
