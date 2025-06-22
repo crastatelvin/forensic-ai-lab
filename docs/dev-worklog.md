@@ -66,3 +66,4 @@
 - [2025-06-19 15:23] Built/updated report generation improvement in ai_tools.py.
 - [2025-06-20 11:32] Built/updated case assignment flow in forensic_web.py.
 - [2025-06-20 14:52] Built/updated chatbot response formatting in models.py.
+- [2025-06-22 14:15] Built/updated deepfake detection handling in utils.py.
