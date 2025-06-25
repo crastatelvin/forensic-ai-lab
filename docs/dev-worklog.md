@@ -68,3 +68,4 @@
 - [2025-06-20 14:52] Built/updated chatbot response formatting in models.py.
 - [2025-06-22 14:15] Built/updated deepfake detection handling in utils.py.
 - [2025-06-23 14:19] Built/updated face matching flow in utils.py.
+- [2025-06-25 10:40] Built/updated darkweb module notes in README.md.
