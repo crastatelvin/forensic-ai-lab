@@ -69,3 +69,4 @@
 - [2025-06-22 14:15] Built/updated deepfake detection handling in utils.py.
 - [2025-06-23 14:19] Built/updated face matching flow in utils.py.
 - [2025-06-25 10:40] Built/updated darkweb module notes in README.md.
+- [2025-07-01 14:08] Built/updated report generation improvement in README.md.
