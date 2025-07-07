@@ -72,3 +72,4 @@
 - [2025-07-01 14:08] Built/updated report generation improvement in README.md.
 - [2025-07-02 09:26] Built/updated voiceprint comparison tweaks in forensic_web.py.
 - [2025-07-04 09:49] Built/updated dashboard metrics update in ai_tools.py.
+- [2025-07-07 20:34] Built/updated deepfake detection handling in templates.
