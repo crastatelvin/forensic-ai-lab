@@ -74,3 +74,4 @@
 - [2025-07-04 09:49] Built/updated dashboard metrics update in ai_tools.py.
 - [2025-07-07 20:34] Built/updated deepfake detection handling in templates.
 - [2025-07-08 21:34] Built/updated face matching flow in templates.
+- [2025-07-10 16:40] Built/updated chatbot response formatting in utils.py.
