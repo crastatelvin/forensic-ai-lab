@@ -79,3 +79,4 @@
 - [2025-07-12 11:21] Built/updated darkweb module notes in models.py.
 - [2025-07-14 20:26] Built/updated file upload validation in README.md.
 - [2025-07-15 19:12] Built/updated gunshot analysis tuning in templates.
+- [2025-07-15 13:55] Built/updated DNA comparison refinement in utils.py.
