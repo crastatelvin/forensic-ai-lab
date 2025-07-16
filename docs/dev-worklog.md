@@ -81,3 +81,4 @@
 - [2025-07-15 19:12] Built/updated gunshot analysis tuning in templates.
 - [2025-07-15 13:55] Built/updated DNA comparison refinement in utils.py.
 - [2025-07-16 16:55] Built/updated DNA comparison refinement in ai_tools.py.
+- [2025-07-16 18:49] Built/updated ballistics module adjustment in static.
