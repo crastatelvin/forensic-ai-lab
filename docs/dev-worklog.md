@@ -80,3 +80,4 @@
 - [2025-07-14 20:26] Built/updated file upload validation in README.md.
 - [2025-07-15 19:12] Built/updated gunshot analysis tuning in templates.
 - [2025-07-15 13:55] Built/updated DNA comparison refinement in utils.py.
+- [2025-07-16 16:55] Built/updated DNA comparison refinement in ai_tools.py.
