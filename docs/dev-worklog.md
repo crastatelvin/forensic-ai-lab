@@ -83,3 +83,4 @@
 - [2025-07-16 16:55] Built/updated DNA comparison refinement in ai_tools.py.
 - [2025-07-16 18:49] Built/updated ballistics module adjustment in static.
 - [2025-07-18 13:13] Built/updated fingerprint workflow in forensic_web.py.
+- [2025-07-23 12:16] Built/updated DNA comparison refinement in requirements.txt.
