@@ -84,3 +84,4 @@
 - [2025-07-16 18:49] Built/updated ballistics module adjustment in static.
 - [2025-07-18 13:13] Built/updated fingerprint workflow in forensic_web.py.
 - [2025-07-23 12:16] Built/updated DNA comparison refinement in requirements.txt.
+- [2025-07-23 11:58] Built/updated file upload validation in static.
