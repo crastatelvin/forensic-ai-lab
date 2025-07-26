@@ -87,3 +87,4 @@
 - [2025-07-23 11:58] Built/updated file upload validation in static.
 - [2025-07-24 10:50] Built/updated case assignment flow in README.md.
 - [2025-07-25 10:14] Built/updated fingerprint workflow in README.md.
+- [2025-07-26 13:23] Built/updated fingerprint workflow in templates.
