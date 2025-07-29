@@ -91,3 +91,4 @@
 - [2025-07-27 19:52] Built/updated DNA comparison refinement in README.md.
 - [2025-07-28 14:14] Built/updated ballistics module adjustment in README.md.
 - [2025-07-28 11:08] Built/updated role access polish in ai_tools.py.
+- [2025-07-29 13:44] Built/updated dashboard metrics update in templates.
