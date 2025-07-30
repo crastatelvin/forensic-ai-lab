@@ -93,3 +93,4 @@
 - [2025-07-28 11:08] Built/updated role access polish in ai_tools.py.
 - [2025-07-29 13:44] Built/updated dashboard metrics update in templates.
 - [2025-07-29 16:31] Built/updated voiceprint comparison tweaks in templates.
+- [2025-07-30 15:41] Built/updated gunshot analysis tuning in requirements.txt.
