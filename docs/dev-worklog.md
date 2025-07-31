@@ -95,3 +95,4 @@
 - [2025-07-29 16:31] Built/updated voiceprint comparison tweaks in templates.
 - [2025-07-30 15:41] Built/updated gunshot analysis tuning in requirements.txt.
 - [2025-07-30 19:41] Built/updated geospatial module cleanup in ai_tools.py.
+- [2025-07-31 12:36] Built/updated toxicology scoring update in forensic_web.py.
