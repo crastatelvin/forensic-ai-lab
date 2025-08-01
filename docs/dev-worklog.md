@@ -97,3 +97,4 @@
 - [2025-07-30 19:41] Built/updated geospatial module cleanup in ai_tools.py.
 - [2025-07-31 12:36] Built/updated toxicology scoring update in forensic_web.py.
 - [2025-08-01 11:57] Built/updated voiceprint comparison tweaks in README.md.
+- [2025-08-01 12:16] Built/updated case assignment flow in forensic_web.py.
