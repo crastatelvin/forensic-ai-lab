@@ -101,3 +101,4 @@
 - [2025-08-03 11:46] Built/updated file upload validation in requirements.txt.
 - [2025-08-04 16:10] Built/updated toxicology scoring update in README.md.
 - [2025-08-06 15:51] Built/updated gunshot analysis tuning in templates.
+- [2025-08-09 22:14] Built/updated face matching flow in ai_tools.py.
