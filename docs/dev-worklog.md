@@ -103,3 +103,4 @@
 - [2025-08-06 15:51] Built/updated gunshot analysis tuning in templates.
 - [2025-08-09 22:14] Built/updated face matching flow in ai_tools.py.
 - [2025-08-10 22:52] Built/updated chatbot response formatting in models.py.
+- [2025-08-11 20:53] Built/updated dashboard metrics update in templates.
