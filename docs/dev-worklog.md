@@ -106,3 +106,4 @@
 - [2025-08-11 20:53] Built/updated dashboard metrics update in templates.
 - [2025-08-11 10:00] Built/updated file upload validation in README.md.
 - [2025-08-12 11:37] Built/updated voiceprint comparison tweaks in requirements.txt.
+- [2025-08-14 19:36] Built/updated fingerprint workflow in ai_tools.py.
