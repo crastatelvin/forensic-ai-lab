@@ -108,3 +108,4 @@
 - [2025-08-12 11:37] Built/updated voiceprint comparison tweaks in requirements.txt.
 - [2025-08-14 19:36] Built/updated fingerprint workflow in ai_tools.py.
 - [2025-08-17 15:19] Built/updated geospatial module cleanup in forensic_web.py.
+- [2025-08-18 18:27] Built/updated toxicology scoring update in templates.
