@@ -114,3 +114,4 @@
 - [2025-08-22 15:54] Built/updated chatbot response formatting in requirements.txt.
 - [2025-08-25 22:32] Built/updated darkweb module notes in ai_tools.py.
 - [2025-08-27 21:15] Built/updated voiceprint comparison tweaks in ai_tools.py.
+- [2025-08-28 14:24] Built/updated gunshot analysis tuning in utils.py.
