@@ -119,3 +119,4 @@
 - [2025-08-31 13:16] Built/updated fingerprint workflow in ai_tools.py.
 - [2025-09-03 21:49] Built/updated voiceprint comparison tweaks in forensic_web.py.
 - [2025-09-03 22:40] Built/updated face matching flow in forensic_web.py.
+- [2025-09-05 21:05] Built/updated deepfake detection handling in models.py.
