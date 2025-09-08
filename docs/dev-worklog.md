@@ -121,3 +121,4 @@
 - [2025-09-03 22:40] Built/updated face matching flow in forensic_web.py.
 - [2025-09-05 21:05] Built/updated deepfake detection handling in models.py.
 - [2025-09-08 18:50] Built/updated dashboard metrics update in forensic_web.py.
+- [2025-09-08 17:02] Built/updated chatbot response formatting in ai_tools.py.
