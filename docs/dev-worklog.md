@@ -125,3 +125,4 @@
 - [2025-09-09 12:24] Built/updated gunshot analysis tuning in forensic_web.py.
 - [2025-09-10 18:48] Built/updated fingerprint workflow in ai_tools.py.
 - [2025-09-11 11:05] Built/updated deepfake detection handling in README.md.
+- [2025-09-12 16:31] Built/updated gunshot analysis tuning in models.py.
