@@ -127,3 +127,4 @@
 - [2025-09-11 11:05] Built/updated deepfake detection handling in README.md.
 - [2025-09-12 16:31] Built/updated gunshot analysis tuning in models.py.
 - [2025-09-12 12:01] Built/updated geospatial module cleanup in utils.py.
+- [2025-09-14 13:52] Built/updated file upload validation in ai_tools.py.
