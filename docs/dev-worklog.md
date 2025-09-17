@@ -130,3 +130,4 @@
 - [2025-09-14 13:52] Built/updated file upload validation in ai_tools.py.
 - [2025-09-15 22:10] Built/updated dashboard metrics update in requirements.txt.
 - [2025-09-16 10:32] Built/updated dashboard metrics update in forensic_web.py.
+- [2025-09-17 09:15] Built/updated gunshot analysis tuning in models.py.
