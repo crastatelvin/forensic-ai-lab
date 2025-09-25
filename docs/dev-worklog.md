@@ -135,3 +135,4 @@
 - [2025-09-19 21:00] Built/updated geospatial module cleanup in forensic_web.py.
 - [2025-09-22 14:25] Built/updated chatbot response formatting in README.md.
 - [2025-09-23 15:19] Built/updated voiceprint comparison tweaks in templates.
+- [2025-09-25 15:51] Built/updated role access polish in forensic_web.py.
