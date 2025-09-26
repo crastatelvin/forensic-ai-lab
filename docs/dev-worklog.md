@@ -137,3 +137,4 @@
 - [2025-09-23 15:19] Built/updated voiceprint comparison tweaks in templates.
 - [2025-09-25 15:51] Built/updated role access polish in forensic_web.py.
 - [2025-09-25 09:12] Built/updated fingerprint workflow in forensic_web.py.
+- [2025-09-26 13:23] Built/updated face matching flow in templates.
