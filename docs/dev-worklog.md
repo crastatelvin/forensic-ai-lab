@@ -138,3 +138,4 @@
 - [2025-09-25 15:51] Built/updated role access polish in forensic_web.py.
 - [2025-09-25 09:12] Built/updated fingerprint workflow in forensic_web.py.
 - [2025-09-26 13:23] Built/updated face matching flow in templates.
+- [2025-09-28 14:13] Built/updated toxicology scoring update in README.md.
