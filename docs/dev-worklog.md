@@ -140,3 +140,4 @@
 - [2025-09-26 13:23] Built/updated face matching flow in templates.
 - [2025-09-28 14:13] Built/updated toxicology scoring update in README.md.
 - [2025-09-29 09:35] Built/updated darkweb module notes in templates.
+- [2025-09-30 21:56] Built/updated fingerprint workflow in forensic_web.py.
