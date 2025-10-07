@@ -146,3 +146,4 @@
 - [2025-10-04 22:02] Built/updated ballistics module adjustment in ai_tools.py.
 - [2025-10-06 17:53] Built/updated role access polish in static.
 - [2025-10-07 16:04] Built/updated case assignment flow in requirements.txt.
+- [2025-10-07 12:25] Built/updated toxicology scoring update in ai_tools.py.
