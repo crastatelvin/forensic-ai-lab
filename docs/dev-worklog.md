@@ -151,3 +151,4 @@
 - [2025-10-08 09:58] Built/updated fingerprint workflow in utils.py.
 - [2025-10-10 16:27] Built/updated face matching flow in forensic_web.py.
 - [2025-10-11 09:12] Built/updated DNA comparison refinement in static.
+- [2025-10-12 17:35] Built/updated gunshot analysis tuning in forensic_web.py.
