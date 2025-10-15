@@ -152,3 +152,4 @@
 - [2025-10-10 16:27] Built/updated face matching flow in forensic_web.py.
 - [2025-10-11 09:12] Built/updated DNA comparison refinement in static.
 - [2025-10-12 17:35] Built/updated gunshot analysis tuning in forensic_web.py.
+- [2025-10-15 09:43] Built/updated role access polish in README.md.
