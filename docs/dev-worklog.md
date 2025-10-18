@@ -156,3 +156,4 @@
 - [2025-10-16 21:30] Built/updated dashboard metrics update in README.md.
 - [2025-10-17 10:43] Built/updated gunshot analysis tuning in models.py.
 - [2025-10-17 11:59] Built/updated deepfake detection handling in models.py.
+- [2025-10-18 12:10] Built/updated file upload validation in templates.
