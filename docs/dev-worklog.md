@@ -159,3 +159,4 @@
 - [2025-10-18 12:10] Built/updated file upload validation in templates.
 - [2025-10-20 19:04] Built/updated fingerprint workflow in ai_tools.py.
 - [2025-10-20 10:18] Built/updated chatbot response formatting in utils.py.
+- [2025-10-23 12:28] Built/updated deepfake detection handling in utils.py.
