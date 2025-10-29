@@ -162,3 +162,4 @@
 - [2025-10-23 12:28] Built/updated deepfake detection handling in utils.py.
 - [2025-10-24 09:52] Built/updated role access polish in utils.py.
 - [2025-10-27 10:20] Built/updated face matching flow in ai_tools.py.
+- [2025-10-29 14:25] Built/updated gunshot analysis tuning in requirements.txt.
