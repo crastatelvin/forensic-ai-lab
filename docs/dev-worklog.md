@@ -165,3 +165,4 @@
 - [2025-10-29 14:25] Built/updated gunshot analysis tuning in requirements.txt.
 - [2025-10-29 12:10] Built/updated voiceprint comparison tweaks in README.md.
 - [2025-10-30 17:01] Built/updated dashboard metrics update in ai_tools.py.
+- [2025-10-31 21:24] Built/updated dashboard metrics update in README.md.
