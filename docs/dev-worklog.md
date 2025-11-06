@@ -169,3 +169,4 @@
 - [2025-11-01 11:58] Built/updated darkweb module notes in static.
 - [2025-11-02 21:13] Built/updated dashboard metrics update in templates.
 - [2025-11-03 21:04] Built/updated file upload validation in README.md.
+- [2025-11-06 18:07] Built/updated deepfake detection handling in utils.py.
