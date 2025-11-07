@@ -171,3 +171,4 @@
 - [2025-11-03 21:04] Built/updated file upload validation in README.md.
 - [2025-11-06 18:07] Built/updated deepfake detection handling in utils.py.
 - [2025-11-07 14:29] Built/updated face matching flow in utils.py.
+- [2025-11-07 17:15] Built/updated geospatial module cleanup in utils.py.
