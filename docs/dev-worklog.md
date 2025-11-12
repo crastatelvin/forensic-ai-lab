@@ -174,3 +174,4 @@
 - [2025-11-07 17:15] Built/updated geospatial module cleanup in utils.py.
 - [2025-11-08 21:39] Built/updated toxicology scoring update in templates.
 - [2025-11-11 21:27] Built/updated role access polish in README.md.
+- [2025-11-12 18:00] Built/updated DNA comparison refinement in utils.py.
