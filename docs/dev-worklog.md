@@ -178,3 +178,4 @@
 - [2025-11-13 12:09] Built/updated deepfake detection handling in README.md.
 - [2025-11-15 14:50] Built/updated dashboard metrics update in README.md.
 - [2025-11-16 11:35] Built/updated role access polish in templates.
+- [2025-11-20 20:28] Built/updated gunshot analysis tuning in static.
