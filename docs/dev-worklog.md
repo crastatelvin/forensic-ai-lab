@@ -181,3 +181,4 @@
 - [2025-11-20 20:28] Built/updated gunshot analysis tuning in static.
 - [2025-11-22 15:55] Built/updated dashboard metrics update in README.md.
 - [2025-11-23 19:11] Built/updated DNA comparison refinement in models.py.
+- [2025-11-24 12:11] Built/updated voiceprint comparison tweaks in requirements.txt.
