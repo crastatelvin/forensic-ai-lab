@@ -183,3 +183,4 @@
 - [2025-11-23 19:11] Built/updated DNA comparison refinement in models.py.
 - [2025-11-24 12:11] Built/updated voiceprint comparison tweaks in requirements.txt.
 - [2025-11-24 16:40] Built/updated fingerprint workflow in forensic_web.py.
+- [2025-11-26 21:50] Built/updated chatbot response formatting in models.py.
