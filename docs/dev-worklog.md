@@ -186,3 +186,4 @@
 - [2025-11-26 21:50] Built/updated chatbot response formatting in models.py.
 - [2025-11-27 19:15] Built/updated face matching flow in static.
 - [2025-11-27 09:30] Built/updated face matching flow in forensic_web.py.
+- [2025-11-28 10:59] Built/updated report generation improvement in utils.py.
