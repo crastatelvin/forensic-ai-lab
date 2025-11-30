@@ -187,3 +187,4 @@
 - [2025-11-27 19:15] Built/updated face matching flow in static.
 - [2025-11-27 09:30] Built/updated face matching flow in forensic_web.py.
 - [2025-11-28 10:59] Built/updated report generation improvement in utils.py.
+- [2025-11-30 11:54] Built/updated report generation improvement in requirements.txt.
