@@ -190,3 +190,4 @@
 - [2025-11-30 11:54] Built/updated report generation improvement in requirements.txt.
 - [2025-12-02 14:43] Built/updated report generation improvement in forensic_web.py.
 - [2025-12-02 09:55] Built/updated deepfake detection handling in models.py.
+- [2025-12-03 13:54] Built/updated chatbot response formatting in templates.
