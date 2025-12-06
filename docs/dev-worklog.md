@@ -192,3 +192,4 @@
 - [2025-12-02 09:55] Built/updated deepfake detection handling in models.py.
 - [2025-12-03 13:54] Built/updated chatbot response formatting in templates.
 - [2025-12-05 20:05] Built/updated case assignment flow in README.md.
+- [2025-12-06 21:15] Built/updated role access polish in templates.
