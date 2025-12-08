@@ -194,3 +194,4 @@
 - [2025-12-05 20:05] Built/updated case assignment flow in README.md.
 - [2025-12-06 21:15] Built/updated role access polish in templates.
 - [2025-12-07 09:52] Built/updated DNA comparison refinement in static.
+- [2025-12-08 18:27] Built/updated geospatial module cleanup in static.
