@@ -196,3 +196,4 @@
 - [2025-12-07 09:52] Built/updated DNA comparison refinement in static.
 - [2025-12-08 18:27] Built/updated geospatial module cleanup in static.
 - [2025-12-09 13:50] Built/updated gunshot analysis tuning in templates.
+- [2025-12-10 14:59] Built/updated voiceprint comparison tweaks in README.md.
