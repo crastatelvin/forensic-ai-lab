@@ -212,16 +212,9 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ## 🙏 Acknowledgments
 
-* Developed by **TELVIN CRASTA**.
+* Developed by **ILLUSION DISSOLUTION**.
 * Powered by **Flask**, **SQLAlchemy**, and various **AI libraries**.
 * Special thanks to the forensic science community for valuable insights and feedback.
-
----
-
-## 📬 Contact
-
-For questions or support, please contact:
-✉️ **[crastatelvin@gmail.com](mailto:crastatelvin@gmail.com)**
 
 ---
 
