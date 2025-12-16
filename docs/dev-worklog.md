@@ -200,3 +200,4 @@
 - [2025-12-11 09:35] Built/updated toxicology scoring update in requirements.txt.
 - [2025-12-15 15:30] Built/updated geospatial module cleanup in requirements.txt.
 - [2025-12-15 22:57] Built/updated report generation improvement in static.
+- [2025-12-16 09:09] Built/updated fingerprint workflow in templates.
