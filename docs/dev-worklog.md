@@ -204,3 +204,4 @@
 - [2025-12-17 17:18] Built/updated fingerprint workflow in ai_tools.py.
 - [2025-12-17 10:29] Built/updated file upload validation in static.
 - [2025-12-18 14:28] Built/updated dashboard metrics update in static.
+- [2025-12-18 15:59] Built/updated gunshot analysis tuning in templates.
