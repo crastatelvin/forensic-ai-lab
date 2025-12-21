@@ -206,3 +206,4 @@
 - [2025-12-18 14:28] Built/updated dashboard metrics update in static.
 - [2025-12-18 15:59] Built/updated gunshot analysis tuning in templates.
 - [2025-12-20 18:49] Built/updated voiceprint comparison tweaks in README.md.
+- [2025-12-21 14:27] Built/updated fingerprint workflow in ai_tools.py.
