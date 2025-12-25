@@ -213,3 +213,4 @@
 - [2025-12-23 12:55] Built/updated darkweb module notes in ai_tools.py.
 - [2025-12-24 10:46] Built/updated face matching flow in utils.py.
 - [2025-12-24 11:13] Built/updated voiceprint comparison tweaks in templates.
+- [2025-12-25 21:59] Built/updated geospatial module cleanup in forensic_web.py.
