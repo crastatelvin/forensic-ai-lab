@@ -215,3 +215,4 @@
 - [2025-12-24 11:13] Built/updated voiceprint comparison tweaks in templates.
 - [2025-12-25 21:59] Built/updated geospatial module cleanup in forensic_web.py.
 - [2025-12-25 22:19] Built/updated geospatial module cleanup in static.
+- [2025-12-27 11:06] Built/updated role access polish in ai_tools.py.
