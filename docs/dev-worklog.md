@@ -218,3 +218,4 @@
 - [2025-12-27 11:06] Built/updated role access polish in ai_tools.py.
 - [2025-12-28 11:50] Built/updated fingerprint workflow in forensic_web.py.
 - [2025-12-29 09:05] Built/updated file upload validation in utils.py.
+- [2026-01-01 11:14] Built/updated report generation improvement in requirements.txt.
