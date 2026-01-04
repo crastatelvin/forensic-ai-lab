@@ -220,3 +220,4 @@
 - [2025-12-29 09:05] Built/updated file upload validation in utils.py.
 - [2026-01-01 11:14] Built/updated report generation improvement in requirements.txt.
 - [2026-01-03 18:25] Built/updated face matching flow in models.py.
+- [2026-01-04 19:19] Built/updated report generation improvement in utils.py.
