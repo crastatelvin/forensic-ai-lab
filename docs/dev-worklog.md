@@ -221,3 +221,4 @@
 - [2026-01-01 11:14] Built/updated report generation improvement in requirements.txt.
 - [2026-01-03 18:25] Built/updated face matching flow in models.py.
 - [2026-01-04 19:19] Built/updated report generation improvement in utils.py.
+- [2026-01-05 10:03] Built/updated chatbot response formatting in ai_tools.py.
