@@ -224,3 +224,4 @@
 - [2026-01-05 10:03] Built/updated chatbot response formatting in ai_tools.py.
 - [2026-01-06 17:17] Built/updated ballistics module adjustment in models.py.
 - [2026-01-07 09:53] Built/updated face matching flow in requirements.txt.
+- [2026-01-09 19:13] Built/updated case assignment flow in utils.py.
