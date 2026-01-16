@@ -227,3 +227,4 @@
 - [2026-01-09 19:13] Built/updated case assignment flow in utils.py.
 - [2026-01-10 21:44] Built/updated face matching flow in ai_tools.py.
 - [2026-01-14 21:34] Built/updated geospatial module cleanup in static.
+- [2026-01-16 14:45] Built/updated dashboard metrics update in README.md.
