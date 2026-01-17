@@ -229,3 +229,4 @@
 - [2026-01-14 21:34] Built/updated geospatial module cleanup in static.
 - [2026-01-16 14:45] Built/updated dashboard metrics update in README.md.
 - [2026-01-16 12:07] Built/updated fingerprint workflow in utils.py.
+- [2026-01-17 19:52] Built/updated file upload validation in static.
