@@ -231,3 +231,4 @@
 - [2026-01-16 12:07] Built/updated fingerprint workflow in utils.py.
 - [2026-01-17 19:52] Built/updated file upload validation in static.
 - [2026-01-20 21:54] Built/updated fingerprint workflow in utils.py.
+- [2026-01-20 17:55] Built/updated role access polish in forensic_web.py.
