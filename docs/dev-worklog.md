@@ -233,3 +233,4 @@
 - [2026-01-20 21:54] Built/updated fingerprint workflow in utils.py.
 - [2026-01-20 17:55] Built/updated role access polish in forensic_web.py.
 - [2026-01-21 10:58] Built/updated fingerprint workflow in templates.
+- [2026-01-21 22:01] Built/updated DNA comparison refinement in static.
