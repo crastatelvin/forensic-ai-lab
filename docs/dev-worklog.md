@@ -235,3 +235,4 @@
 - [2026-01-21 10:58] Built/updated fingerprint workflow in templates.
 - [2026-01-21 22:01] Built/updated DNA comparison refinement in static.
 - [2026-01-23 14:35] Built/updated DNA comparison refinement in forensic_web.py.
+- [2026-01-24 10:16] Built/updated geospatial module cleanup in utils.py.
