@@ -237,3 +237,4 @@
 - [2026-01-23 14:35] Built/updated DNA comparison refinement in forensic_web.py.
 - [2026-01-24 10:16] Built/updated geospatial module cleanup in utils.py.
 - [2026-01-27 14:58] Built/updated gunshot analysis tuning in static.
+- [2026-01-28 19:00] Built/updated report generation improvement in models.py.
