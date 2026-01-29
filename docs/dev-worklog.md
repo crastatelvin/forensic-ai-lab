@@ -239,3 +239,4 @@
 - [2026-01-27 14:58] Built/updated gunshot analysis tuning in static.
 - [2026-01-28 19:00] Built/updated report generation improvement in models.py.
 - [2026-01-28 10:25] Built/updated fingerprint workflow in templates.
+- [2026-01-29 10:46] Built/updated toxicology scoring update in requirements.txt.
