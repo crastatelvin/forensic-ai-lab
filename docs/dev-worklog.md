@@ -240,3 +240,4 @@
 - [2026-01-28 19:00] Built/updated report generation improvement in models.py.
 - [2026-01-28 10:25] Built/updated fingerprint workflow in templates.
 - [2026-01-29 10:46] Built/updated toxicology scoring update in requirements.txt.
+- [2026-01-30 15:24] Built/updated file upload validation in utils.py.
