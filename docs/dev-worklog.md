@@ -242,3 +242,4 @@
 - [2026-01-29 10:46] Built/updated toxicology scoring update in requirements.txt.
 - [2026-01-30 15:24] Built/updated file upload validation in utils.py.
 - [2026-02-01 12:06] Built/updated gunshot analysis tuning in ai_tools.py.
+- [2026-02-04 16:44] Built/updated ballistics module adjustment in README.md.
