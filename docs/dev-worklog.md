@@ -244,3 +244,4 @@
 - [2026-02-01 12:06] Built/updated gunshot analysis tuning in ai_tools.py.
 - [2026-02-04 16:44] Built/updated ballistics module adjustment in README.md.
 - [2026-02-06 09:09] Built/updated ballistics module adjustment in templates.
+- [2026-02-07 22:05] Built/updated voiceprint comparison tweaks in forensic_web.py.
