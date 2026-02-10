@@ -245,3 +245,4 @@
 - [2026-02-04 16:44] Built/updated ballistics module adjustment in README.md.
 - [2026-02-06 09:09] Built/updated ballistics module adjustment in templates.
 - [2026-02-07 22:05] Built/updated voiceprint comparison tweaks in forensic_web.py.
+- [2026-02-10 20:08] Built/updated file upload validation in README.md.
