@@ -248,3 +248,4 @@
 - [2026-02-10 20:08] Built/updated file upload validation in README.md.
 - [2026-02-12 18:45] Built/updated DNA comparison refinement in requirements.txt.
 - [2026-02-12 22:27] Built/updated face matching flow in static.
+- [2026-02-13 22:22] Built/updated deepfake detection handling in static.
