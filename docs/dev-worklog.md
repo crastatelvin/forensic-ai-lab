@@ -253,3 +253,4 @@
 - [2026-02-14 21:39] Built/updated case assignment flow in models.py.
 - [2026-02-15 13:35] Built/updated face matching flow in utils.py.
 - [2026-02-20 12:09] Built/updated case assignment flow in models.py.
+- [2026-02-20 09:21] Built/updated role access polish in models.py.
