@@ -255,3 +255,4 @@
 - [2026-02-20 12:09] Built/updated case assignment flow in models.py.
 - [2026-02-20 09:21] Built/updated role access polish in models.py.
 - [2026-02-21 11:41] Built/updated gunshot analysis tuning in models.py.
+- [2026-02-22 18:25] Built/updated DNA comparison refinement in requirements.txt.
