@@ -259,3 +259,4 @@
 - [2026-02-25 16:57] Built/updated ballistics module adjustment in requirements.txt.
 - [2026-02-28 13:38] Built/updated darkweb module notes in utils.py.
 - [2026-03-02 09:35] Built/updated toxicology scoring update in templates.
+- [2026-03-03 17:12] Built/updated file upload validation in static.
