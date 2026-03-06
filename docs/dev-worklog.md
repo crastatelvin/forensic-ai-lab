@@ -263,3 +263,4 @@
 - [2026-03-05 10:29] Built/updated role access polish in forensic_web.py.
 - [2026-03-05 12:43] Built/updated DNA comparison refinement in models.py.
 - [2026-03-06 12:13] Built/updated role access polish in templates.
+- [2026-03-06 21:05] Built/updated case assignment flow in models.py.
