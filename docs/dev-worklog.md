@@ -266,3 +266,4 @@
 - [2026-03-06 21:05] Built/updated case assignment flow in models.py.
 - [2026-03-10 22:07] Built/updated case assignment flow in forensic_web.py.
 - [2026-03-11 13:34] Built/updated face matching flow in templates.
+- [2026-03-12 17:36] Built/updated voiceprint comparison tweaks in static.
