@@ -269,3 +269,4 @@
 - [2026-03-12 17:36] Built/updated voiceprint comparison tweaks in static.
 - [2026-03-13 16:53] Built/updated deepfake detection handling in utils.py.
 - [2026-03-14 09:10] Built/updated fingerprint workflow in utils.py.
+- [2026-03-20 18:54] Built/updated file upload validation in ai_tools.py.
