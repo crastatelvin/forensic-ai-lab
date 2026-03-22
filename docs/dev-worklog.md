@@ -270,3 +270,4 @@
 - [2026-03-13 16:53] Built/updated deepfake detection handling in utils.py.
 - [2026-03-14 09:10] Built/updated fingerprint workflow in utils.py.
 - [2026-03-20 18:54] Built/updated file upload validation in ai_tools.py.
+- [2026-03-22 11:39] Built/updated deepfake detection handling in README.md.
