@@ -277,3 +277,4 @@
 - [2026-03-30 13:36] Built/updated toxicology scoring update in ai_tools.py.
 - [2026-03-31 11:19] Built/updated DNA comparison refinement in README.md.
 - [2026-03-31 12:47] Built/updated dashboard metrics update in requirements.txt.
+- [2026-04-01 14:50] Built/updated ballistics module adjustment in README.md.
