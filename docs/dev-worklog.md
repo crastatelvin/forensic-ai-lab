@@ -279,3 +279,4 @@
 - [2026-03-31 12:47] Built/updated dashboard metrics update in requirements.txt.
 - [2026-04-01 14:50] Built/updated ballistics module adjustment in README.md.
 - [2026-04-02 16:40] Built/updated file upload validation in ai_tools.py.
+- [2026-04-02 17:37] Built/updated chatbot response formatting in README.md.
