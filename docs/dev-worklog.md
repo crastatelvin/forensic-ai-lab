@@ -281,3 +281,4 @@
 - [2026-04-02 16:40] Built/updated file upload validation in ai_tools.py.
 - [2026-04-02 17:37] Built/updated chatbot response formatting in README.md.
 - [2026-04-04 19:57] Built/updated voiceprint comparison tweaks in ai_tools.py.
+- [2026-04-06 09:31] Built/updated face matching flow in ai_tools.py.
