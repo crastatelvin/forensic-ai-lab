@@ -285,3 +285,4 @@
 - [2026-04-07 22:43] Built/updated face matching flow in utils.py.
 - [2026-04-08 18:40] Built/updated darkweb module notes in ai_tools.py.
 - [2026-04-10 11:43] Built/updated dashboard metrics update in README.md.
+- [2026-04-12 13:42] Built/updated darkweb module notes in models.py.
