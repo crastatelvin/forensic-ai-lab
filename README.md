@@ -120,7 +120,6 @@ The system is built on Flask, backed by SQLite via SQLAlchemy, and integrates li
 ## 🏗️ Architecture
 
 ```
-```
 ┌──────────────────────────────────────────────────────────────┐
 │                    Browser / Client                          │
 └───────────────────────────────┬──────────────────────────────┘
@@ -151,7 +150,6 @@ The system is built on Flask, backed by SQLite via SQLAlchemy, and integrates li
 │  │  (instance/)   │      │      (PDF generation)        │    │
 │  └────────────────┘      └──────────────────────────────┘    │
 └───────────────────────────────────────────────────────────── ┘
-```
 ```
 
 ---
