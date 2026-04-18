@@ -5,7 +5,10 @@ from PIL import Image
 import random
 import os
 import wave
-import face_recognition
+try:
+    import face_recognition
+except:
+    face_recognition = None
 import librosa
 import numpy as np
 from transformers import pipeline
@@ -186,6 +189,9 @@ def analyze_face(crime_scene_path, suspect_path, match_threshold=0.6):
     :param match_threshold: Threshold for determining a match.
     :return: Analysis result as a dictionary.
     """
+    if not face_recognition:
+        return {"error": "Face recognition not available"}
+    
     try:
         # Load images
         crime_image = face_recognition.load_image_file(crime_scene_path)
