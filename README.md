@@ -62,27 +62,38 @@ The system is built on Flask, backed by SQLite via SQLAlchemy, and integrates li
 <br/>
 <br/>
 <img width="885" height="397" alt="image" src="https://github.com/user-attachments/assets/fedabd9e-5ded-4d0b-b8cf-183cfada7bb4" />
-
+<br/>
+<br/>
 <img width="896" height="420" alt="image" src="https://github.com/user-attachments/assets/745fad21-0eb8-44bd-a446-6080fd4c13ba" />
-
+<br/>
+<br/>
 <img width="893" height="412" alt="image" src="https://github.com/user-attachments/assets/8900428e-0adf-4de2-89a5-2190e5aeb426" />
-
+<br/>
+<br/>
 <img width="893" height="413" alt="image" src="https://github.com/user-attachments/assets/e21579c2-7b1c-4a91-b458-9b657b17b673" />
-
+<br/>
+<br/>
 <img width="894" height="413" alt="image" src="https://github.com/user-attachments/assets/148f0de6-e39c-43cf-8163-1a369c647985" />
-
+<br/>
+<br/>
 <img width="890" height="415" alt="image" src="https://github.com/user-attachments/assets/166cf5d6-2410-4666-aba5-c156c72daed1" />
-
+<br/>
+<br/>
 <img width="896" height="419" alt="image" src="https://github.com/user-attachments/assets/aec2e303-3ce2-4827-8a1b-2d09e86a404e" />
-
+<br/>
+<br/>
 <img width="895" height="419" alt="image" src="https://github.com/user-attachments/assets/dad73a5e-4642-46f0-aaa7-28a6122be8d4" />
-
+<br/>
+<br/>
 <img width="885" height="413" alt="image" src="https://github.com/user-attachments/assets/99e386f7-c690-4f82-83ee-e9a90984c42c" />
-
+<br/>
+<br/>
 <img width="892" height="421" alt="image" src="https://github.com/user-attachments/assets/c626db52-7bb7-41a0-9958-248252af41e7" />
-
+<br/>
+<br/>
 <img width="894" height="507" alt="image" src="https://github.com/user-attachments/assets/a8604102-1682-46c0-a904-1e77a9cade0e" />
-
+<br/>
+<br/>
 <img width="880" height="504" alt="image" src="https://github.com/user-attachments/assets/bea248ab-ced9-4856-bb1c-ce4c4cb803a1" />
 
 
