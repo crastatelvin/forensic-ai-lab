@@ -59,7 +59,8 @@ The system is built on Flask, backed by SQLite via SQLAlchemy, and integrates li
 ## 💻 Application Preview
 
 <img width="894" height="422" alt="image" src="https://github.com/user-attachments/assets/b63f9b59-6281-4992-95e5-4474afc795cb" />
-
+<br/>
+<br/>
 <img width="885" height="397" alt="image" src="https://github.com/user-attachments/assets/fedabd9e-5ded-4d0b-b8cf-183cfada7bb4" />
 
 <img width="896" height="420" alt="image" src="https://github.com/user-attachments/assets/745fad21-0eb8-44bd-a446-6080fd4c13ba" />
