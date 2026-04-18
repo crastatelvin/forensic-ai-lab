@@ -1,7 +1,7 @@
 
 ---
 
-# 🕵️‍♂️ Forensic AI Lab \[Project F.A.I.L]
+# 🕵️‍♂️ Forensic AI Lab 
 
 **Forensic AI Lab** is a comprehensive web-based application designed to assist forensic experts, law enforcement officers, and administrators in analyzing various types of evidence using AI-powered modules. The toolkit provides a user-friendly interface for uploading evidence, performing analyses, and generating detailed reports.
 
@@ -54,7 +54,7 @@ forensic_toolkit/
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/forensic_toolkit.git
+git clone https://github.com/crastatelvin/forensic_toolkit.git
 cd forensic_toolkit
 ```
 
