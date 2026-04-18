@@ -478,7 +478,7 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'sqlite:///forensic.db'
     UPLOAD_FOLDER = 'uploads/'
     REPORT_FOLDER = 'reports/'
-    SECRET_KEY = 'your-secure-secret-key'   # Change this!
+    SECRET_KEY = 'your-secure-secret-key'  
 ```
 
 ---
