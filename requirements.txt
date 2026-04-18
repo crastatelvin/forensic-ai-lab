@@ -3,3 +3,12 @@ matplotlib
 pillow
 flask-sqlalchemy
 reportlab
+face-recognition
+librosa
+transformers
+opencv-python
+ultralytics
+torch
+torchvision
+geopy
+numpy
