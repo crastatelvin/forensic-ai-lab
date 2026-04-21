@@ -288,3 +288,4 @@
 - [2026-04-12 13:42] Built/updated darkweb module notes in models.py.
 - [2026-04-14 11:40] Built/updated report generation improvement in models.py.
 - [2026-04-19 11:58] Built/updated darkweb module notes in forensic_web.py.
+- [2026-04-21 22:11] Built/updated toxicology scoring update in README.md.
