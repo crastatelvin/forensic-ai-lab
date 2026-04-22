@@ -550,3 +550,7 @@ Made with ❤️ by [Crasta Telvin](https://github.com/crastatelvin)
 ⭐ Star this repo if you find it useful!
 
 </div>
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE).
