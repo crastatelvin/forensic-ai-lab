@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Language stats: headline this repo as Python (the forensic analysis
+# core — ai_tools.py, forensic_web.py, models.py, utils.py). The Flask
+# templates and static assets are UI scaffolding for running the
+# toolkit in a browser — not the repo's core identity. Marking them
+# vendored tells GitHub's Linguist to attribute the primary language
+# to the Python analysis code.
+templates/** linguist-vendored
+static/** linguist-vendored

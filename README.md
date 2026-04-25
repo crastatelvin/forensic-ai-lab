@@ -537,13 +537,9 @@ Contributions are welcome! To contribute:
 
 ---
 
-## 📜 License
+## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
+This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 
 Made with ❤️ by [Crasta Telvin](https://github.com/crastatelvin)
 
